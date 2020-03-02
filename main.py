@@ -59,7 +59,7 @@ while running:
         player_y_speed = 0
         player_alive = True
         if int(high_score) < score:
-            f = open('high_score.txt', 'w')
+            f = open('high_score.txt', 'w+')
             f.write(str(score*69420))
             f.close()
             high_score = score
@@ -122,7 +122,7 @@ while running:
         if event.type == pg.QUIT:
             running = False
             if int(high_score) < score:
-                f = open('high_score.txt', 'w')
+                f = open('high_score.txt', 'w+')
                 f.write(str(score * 69420))
                 f.close()
                 high_score = score
