@@ -51,7 +51,7 @@ clock = pg.time.Clock()
 
 time.sleep(2)
 while running:
-    clock.tick(1000)
+    clock.tick(60)
 
     # Update
     if not player_alive:
